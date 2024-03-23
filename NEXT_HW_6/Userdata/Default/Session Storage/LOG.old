@@ -1,0 +1,14 @@
+2024/03/23-23:56:26.495 3924 Reusing MANIFEST C:\Users\UserK\Desktop\NEXT\HW\NEXT_HW_6\Userdata\Default\Session Storage/MANIFEST-000001
+2024/03/23-23:56:26.498 3924 Recovering log #34
+2024/03/23-23:56:26.501 3924 Level-0 table #36: started
+2024/03/23-23:56:26.526 3924 Level-0 table #36: 36741 bytes OK
+2024/03/23-23:56:26.534 3924 Delete type=0 #34
+2024/03/23-23:56:26.535 3924 Compacting 4@0 + 1@1 files
+2024/03/23-23:56:26.554 3924 Generated table #38@0: 4 keys, 36626 bytes
+2024/03/23-23:56:26.554 3924 Compacted 4@0 + 1@1 files => 36626 bytes
+2024/03/23-23:56:26.557 3924 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/03/23-23:56:26.559 3924 Delete type=2 #25
+2024/03/23-23:56:26.559 3924 Delete type=2 #27
+2024/03/23-23:56:26.559 3924 Delete type=2 #30
+2024/03/23-23:56:26.562 3924 Delete type=2 #33
+2024/03/23-23:56:26.562 3924 Delete type=2 #36
