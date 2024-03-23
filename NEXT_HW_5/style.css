@@ -1,0 +1,301 @@
+body {
+    margin: 0px;
+}
+.body {
+    background-color: lightgray;
+    width: 360px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    height: 6.9vh;
+    margin-bottom: 10px;
+}
+header img,
+svg {
+    height: 100%;
+    width: auto;
+    box-sizing: border-box;
+}
+header > div {
+    width: 50%;
+}
+
+header > div:first-child {
+    display: flex;
+    justify-content: left;
+}
+
+header > div:nth-child(2) {
+    display: flex;
+    justify-content: right;
+}
+header img,
+svg {
+    padding: 10px;
+}
+
+.toss-logo {
+    overflow: hidden;
+}
+
+.accounts {
+    height: 24.13vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px / 10px;
+    background-color: white;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.accounts > div {
+    height: 33%;
+    box-sizing: border-box;
+}
+
+.icon {
+    height: 6vh;
+    width: auto;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+.account > div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.values div {
+    height: 50%;
+    width: auto;
+}
+
+.values div:first-child {
+    font-size: 50%;
+    color: grey;
+}
+
+.values div:nth-child(2) {
+    font-size: 70%;
+}
+
+.transaction {
+    border-radius: 15%;
+    background-color: lightgray;
+    font-size: 50%;
+    padding: 10px;
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px 0 10px;
+    border-top-style: solid;
+    border-top-color: gray;
+    border-top-width: 1px;
+}
+.more > div {
+    text-align: center;
+    font-size: 50%;
+    color: gray;
+}
+
+.toss-bank {
+    padding: 0 10px;
+}
+.toss-bank > button {
+    width: 100%;
+    height: 7vh;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px / 10px;
+    padding: 0;
+}
+
+.toss-bank > button > div:first-child {
+    margin-left: 10px;
+    font-weight: 550;
+}
+
+.toss-bank > button > div:nth-child(2) {
+    margin-right: 10px;
+    color: lightgray;
+}
+.expense {
+    margin: 0 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px / 10px;
+    margin-bottom: 10px;
+}
+.expense > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+.expense img {
+    height: 7vh;
+    margin-right: 10px;
+}
+
+.expense > div > div:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.D-2 {
+    border-radius: 10px/10px;
+}
+
+.text {
+    font-size: 50%;
+    color: grey;
+}
+
+.money {
+    font-weight: 550;
+    color: black;
+}
+
+.expense > .arrears {
+    padding-top: 10px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: gray;
+}
+
+.this-month button {
+    font-size: 50%;
+    border: none;
+    border-radius: 5px/5px;
+    color: rgb(78, 78, 223);
+    padding: 7px 5px;
+    background-color: rgb(198, 216, 250);
+}
+
+.finance-service {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    margin: 0 10px;
+    border-radius: 5px/ 5px;
+    padding: 10px 0;
+}
+
+.finance-service button {
+    border: none;
+    background-color: white;
+    color: gray;
+    font-size: 50%;
+    /* padding: 10px 0; */
+    width: 33.3%;
+}
+
+.finance-service button:nth-child(2) {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+}
+
+.pic {
+    width: 7vh;
+    height: 7vh;
+    margin-right: 10px;
+    /* margin: 0 10px; */
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+.bar > div:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bar > div:nth-child(2) {
+    margin-right: 10px;
+}
+
+.customized {
+    font-size: 60%;
+    background-color: white;
+    margin: 0 10px;
+    border-radius: 5px/ 5px;
+    margin-top: 10px;
+}
+.customized > div {
+    margin: 0 10px;
+}
+
+.추천서비스 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.customized > div:first-child {
+    color: gray;
+}
+
+.menu {
+    padding-top: 5px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    width: 360px;
+    border-radius: 5px 5px 0 0/5px 5px 0 0;
+}
+
+.menu > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 5px;
+    color: gray;
+}
+.menu > div:first-child {
+    color: black;
+}
+.menu > div > svg {
+    box-sizing: border-box;
+    height: 3vh;
+    padding: 0;
+}
