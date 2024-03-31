@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}" />
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="header">
+                <div><a href="http://127.0.0.1:8000/home">Home</a></div>
+                <div><a>About</a></div>
+                <div><a href="http://127.0.0.1:8000/portfolio">Portfolio</a></div>
+                <div><a>Blog</a></div>
+                <div><a>Contact</a></div>
+            </div>
+        </div>
+        <h1>Welcome to my webpage!</h1>
+        <ul>
+            <li>
+                <h2>Who is Honggyu Lee?</h2>
+            </li>
+            <li>
+                <img src="{% static 'korea-univ.svg'%}" />
+                <p>
+                    I am the student of korea university in Seoul, south Korea. Also, I am a member of NEXT which is the
+                    best start-up development association. And if you wonder my project, click 'Portfolio' above
+                    menu-bar.
+                </p>
+            </li>
+            <li>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Html/css</li>
+                    <li>MySQL</li>
+                    <li>Django</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

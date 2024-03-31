@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vh;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+}
+
+.header a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.header > div {
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header-container {
+    height: 40.4px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body > ul > li:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+}
+
+img {
+    margin: 10px;
+}

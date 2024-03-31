@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'portfolio.css' %}" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="header">
+                <div><a href="http://127.0.0.1:8000/home">Home</a></div>
+                <div><a>About</a></div>
+                <div><a href="http://127.0.0.1:8000/portfolio">Portfolio</a></div>
+                <div><a>Blog</a></div>
+                <div><a>Contact</a></div>
+            </div>
+        </div>
+        <div>
+            <h1>Welcome to My Portfolio!</h1>
+        </div>
+
+        <div class="images">
+            <div>
+                <img src="{% static 'images/Instagram_clone.png' %}" />
+                <p>
+                    What I made first was Instagram page. It was NEXT instagram page and I clone coded it. I think it is
+                    pretty good, given that it was my first time to try to mimic some 'real' commercial pages, e.g.
+                    instagram, youtube, toss, etc.
+                </p>
+            </div>
+            <div>
+                <img src="{% static 'images/토스클론.png' %}" />
+                <p>
+                    What I made second was Toss page. It was also a clone coding of something alreay existing, and since
+                    it was second time, it was much more comfortable. However, I was quite ran out of time,;; so I just
+                    mechanically did it. I mean, without thinking..!
+                </p>
+            </div>
+        </div>
+        <div>
+            <p>
+                And I've just leared Django, which is one of the powerful web framework in the world. It is very
+                user-friendly, and provide such a powerful utilities such as OML, admin, manage.py, etc...
+            </p>
+            <p>Thank you for your visiting my portfolio page. Have a nice day!</p>
+        </div>
+    </body>
+</html>

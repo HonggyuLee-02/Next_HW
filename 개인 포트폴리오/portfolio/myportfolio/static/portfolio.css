@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    color: white;
+}
+.header-container {
+    height: 40.4px;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vh;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    /* background-color: black; */
+}
+
+.header > div {
+    margin-bottom: 10px;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+}
+img {
+    width: 30vw;
+    margin-right: 10px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.images > div {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+h1 {
+    text-align: center;
+}
