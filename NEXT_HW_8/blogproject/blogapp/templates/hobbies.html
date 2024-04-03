@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{%static 'hobbies.css' %}?v=1" />
+        <title>Hobbies</title>
+    </head>
+    <body>
+        <h1>취미 글 목록</h1>
+        <ol>
+            {% for article in hobbies %}
+            <li><a href="{% url 'hobby' article.pk%}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ol>
+
+        <a href="{% url 'list' %}" id="come-back-to-list">list 페이지로 돌아가기</a>
+    </body>
+</html>

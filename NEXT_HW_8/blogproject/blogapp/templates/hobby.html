@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{%static 'hobby.css'%}" />
+        <title>Hobby {{ article.pk }}</title>
+    </head>
+    <body>
+        <h2>제목</h2>
+        <p>{{article.title}}</p>
+        <h4>처음 작성된 시각</h4>
+        <p>{{article.created_at}}</p>
+        <h4>마지막으로 수정된 시각</h4>
+        <p>{{article.updated_at}}</p>
+        <h3>본문</h3>
+        <p>{{article.content}}</p>
+        <a href="{% url 'list' %}">list 페이지로 돌아가기</a>
+    </body>
+</html>
