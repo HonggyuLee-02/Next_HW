@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{%static 'detail.css'%}" />
+        <title>{{todo.title}}</title>
+    </head>
+    <body>
+        <div>
+            <div>할 일 제목</div>
+            <div>{{todo.title}}</div>
+        </div>
+        <div>
+            <div>할 일 내용</div>
+            <div>{{todo.content}}</div>
+        </div>
+        <div>
+            <div>마감 기한</div>
+            <div>{{todo.deadline}}</div>
+        </div>
+        <div>
+            <div>완료 여부</div>
+            <div>{{todo.status}}</div>
+        </div>
+        <div><a href="{% url 'home' %}">홈으로</a></div>
+        <div><a href="{% url 'update' todo.pk %}">수정하기</a></div>
+        <div><a href="{% url 'delete' todo.pk %}">삭제하기</a></div>
+    </body>
+</html>

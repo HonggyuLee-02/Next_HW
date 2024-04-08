@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{%static 'new.css'%}" />
+        <title>New</title>
+    </head>
+    <body>
+        <div>
+            <form action="" method="post">
+                {%csrf_token%}
+                <div>
+                    <label for="title">Title:</label>
+                    <textarea cols="30" rows="1" name="title" placeholder="할 일 제목을 입력하세요"></textarea>
+                </div>
+                <div>
+                    <label for="content">Content:</label>
+                    <textarea cols="30" rows="10" name="content" placeholder="세부 내용을 입력하세요"></textarea>
+                </div>
+                <div>
+                    <label for="deadline">Deadline:</label>
+                    <input type="datetime-local" name="deadline" />
+                </div>
+                <button type="submit">저장하기</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'home.css' %}?v=1.1" />
+        <title>Home</title>
+    </head>
+    <body>
+        <div id="main">
+            <h1>To-Do List</h1>
+            <div id="table-container">
+                <table>
+                    {% for todo in Todolist %}
+                    <tr>
+                        <td>
+                            <a href="{% url 'detail' todo.pk %}">
+                                <div>
+                                    <div>{{todo.title}}</div>
+                                    <div>{{todo.content}}</div>
+                                </div>
+                                <div>{{todo.dday}}</div>
+                                <div>{{todo.status}}</div>
+                                <form action="" method="post">
+                                    {%csrf_token%}
+                                    <button type="submit" name="is_completed" value="True-{{todo.pk}}">완료</button
+                                    ><button type="submit" name="is_completed" value="False-{{todo.pk}}">미완료</button>
+                                </form>
+                            </a>
+                        </td>
+                    </tr>
+                    {%endfor%}
+                    <tr>
+                        <td><a href="{%url 'new' %}">할 일 추가하기</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

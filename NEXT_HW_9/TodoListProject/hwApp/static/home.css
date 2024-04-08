@@ -1,0 +1,36 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+#table-container {
+    width: 100%;
+}
+a:visited,
+:link {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    width: 100%;
+}
+
+a > div:first-child {
+    width: 50%;
+}
+a > div:nth-child(2) {
+    width: 20%;
+}
