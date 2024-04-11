@@ -1,0 +1,7 @@
+{%extends 'base2.html'%} {%block title%} Foods{%endblock title%} {%block content%}
+<ul>
+    {% for article in foods%}
+    <li><a href="{% url 'food' article.pk %}">{{article.title}}</a></li>
+    {%endfor%}
+</ul>
+{%endblock content%}
