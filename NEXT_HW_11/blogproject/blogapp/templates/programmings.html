@@ -1,8 +1,0 @@
-{%extends 'base2.html'%} {%block title%}Programmings{%endblock title%} {%block content%}
-<ul>
-    {% for article in programmings%}
-    <li><a href="{% url 'programming' article.pk %}">{{article.title}}</a></li>
-    {%endfor%}
-</ul>
-
-{%endblock content%}
