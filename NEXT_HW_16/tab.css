@@ -1,0 +1,22 @@
+.wrapper {
+    height: 25vh;
+    background-color: #000000;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button:hover {
+    background-color: red;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff4519;
+}
