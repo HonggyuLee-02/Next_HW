@@ -1,0 +1,6 @@
+/* src/styles.css */
+img.responsive {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* 이미지를 잘라내거나 비율을 유지하며 조정 */
+}
