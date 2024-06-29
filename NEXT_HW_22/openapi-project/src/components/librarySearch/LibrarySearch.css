@@ -1,0 +1,48 @@
+.library-search-container {
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    margin-bottom: 1rem;
+}
+
+.search-box select {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-box button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0056b3;
+}
+
+.library-details {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.library-details h2 {
+    color: #333;
+}
+
+.library-details p {
+    color: #666;
+    font-size: 1rem;
+}
